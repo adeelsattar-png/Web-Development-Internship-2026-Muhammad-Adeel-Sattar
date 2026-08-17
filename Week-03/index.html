@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Italia | Restaurant & Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header & Navigation -->
+    <header>
+        <div class="logo">Bella<span>Italia</span></div>
+        <nav id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Our Menu</a>
+            <a href="#delivery">Home Delivery</a>
+            <a href="#contact">Reservation</a>
+        </nav>
+        <button id="menu-btn">&#9776;</button>
+    </header>
+
+<!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Fresh & Authentic Italian Food</h1>
+            <p>Enjoy hot wood-fired pizzas, handmade pasta, and fresh desserts delivered straight to your home.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn btn-red">View Menu</a>
+                <a href="#delivery" class="btn btn-outline">Order Online</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80" alt="Delicious Pizza">
+        </div>
+    </section>
+
+<!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Restaurant Inside">
+        </div>
+        <div class="about-text">
+            <h2>About Our Restaurant</h2>
+            <p>Bella Italia was founded in 2015 with a passion for traditional Italian recipes. We source our organic ingredients locally and bake our pizzas in traditional brick ovens to give you the most authentic taste.</p>
+        </div>
+    </section>
+
+<!-- Food Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Popular Menu</h2>
+        <p class="section-sub">Delicious dishes prepared fresh every day</p>
+        
+        <div class="menu-grid">
+    <!-- Menu Item 1 -->
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=400&q=80" alt="Margherita Pizza">
+                <div class="card-body">
+        <h3>Margherita Pizza</h3>
+        <p>Fresh mozzarella, basil leaves, and tomato sauce.</p>
+        <div class="card-footer">
+            <span class="price">Rs. 1,499</span>
+                <a href="#delivery" class="order-btn">Order Now</a>
+    </div>
+    </div>
+    </div>
+
+    <!-- Menu Item 2 -->
+            <!-- Pasta Carbonara Menu Card -->
+<div class="menu-card">
+    <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=400&q=80" alt="Pasta Carbonara">
+    <div class="card-body">
+        <h3>Pasta Carbonara</h3>
+        <p>Creamy sauce with bacon, parmesan cheese, and garlic.</p>
+        <div class="card-footer">
+            <span class="price">Rs. 1,250</span>
+            <a href="#delivery" class="order-btn">Order Now</a>
+</div>
+</div>
+</div>
+
+    <!-- Menu Item 3 -->
+            <div class="menu-card">
+                <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=400&q=80" alt="Tiramisu Dessert">
+                <div class="card-body">
+        <h3>Italian Tiramisu</h3>
+        <p>Classic Italian coffee dessert layered with mascarpone.</p>
+        <div class="card-footer">
+        <span class="price">Rs. 750</span>
+        <a href="#delivery" class="order-btn">Order Now</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Home Delivery Section -->
+    <section id="delivery" class="delivery-section">
+        <h2>Fast Home Delivery</h2>
+        <p class="section-sub">Get your food delivered hot within 30 minutes!</p>
+        
+        <div class="delivery-box">
+            <form id="delivery-form">
+                <div class="form-row">
+                    <div>
+        <label for="del-name">Your Name:</label>
+        <input type="text" id="del-name" placeholder="John Doe">
+        <small id="del-name-err" class="error"></small>
+    </div>
+    <div>
+    <label for="del-phone">Phone Number:</label>
+    <input type="text" id="del-phone" placeholder="0300-1234567">
+    <small id="del-phone-err" class="error"></small>
+    </div>
+</div>
+
+                <label for="del-item">Select Food Item:</label>
+                <select id="del-item">
+                    <option value="">-- Choose Food Item --</option>
+                    <option value="pizza">Margherita Pizza (Rs. 1,499)</option>
+                    <option value="pasta">Pasta Carbonara (Rs. 1,250)</option>
+                    <option value="tiramisu">Italian Tiramisu (Rs. 750)</option>
+                </select>
+                <small id="del-item-err" class="error"></small>
+
+                <label for="del-address">Delivery Address:</label>
+                <textarea id="del-address" rows="3" placeholder="Enter full address..."></textarea>
+                <small id="del-address-err" class="error"></small>
+
+                <button type="submit" class="btn btn-red btn-block">Place Delivery Order</button>
+                <p id="del-status-msg"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Table Reservation / Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Book a Table</h2>
+        <form id="contact-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <small id="name-error" class="error"></small>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <small id="email-error" class="error"></small>
+
+            <label for="message">Special Notes / Guests Count:</label>
+            <textarea id="message" rows="3" placeholder="e.g. Table for 4 people at 8:00 PM"></textarea>
+            <small id="message-error" class="error"></small>
+
+            <button type="submit" class="btn btn-red btn-block">Submit Reservation</button>
+            <p id="form-msg"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Bella Italia. Delicious Food & Fast Delivery.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
